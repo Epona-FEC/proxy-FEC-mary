@@ -3,11 +3,16 @@ html(lang='en')
   head
     meta(charset='utf8')
     title Etsy App
+    style
+      include ../allStyles.css
   body
-    h1 static rendering
-    #app1 Photo Gallery
-    #app2 Item Description
-    #app3 Reviews
+    h1 Search Bar
+    .main
+      .left
+        #app1 Photo Gallery
+        #app3 Reviews
+      .right
+        #app2 Item Details
     #app4 More From
     script.
       window.productId = #{productId || 1};
